@@ -1,6 +1,6 @@
 function forLoop(array) {
   for (let i=0; i < 25; i++) {
-    if (i = 1) {
+    if (i === 1) {
       array.push(`I am ${i} strange loop.`)
     }
     else {
@@ -11,12 +11,13 @@ function forLoop(array) {
 }
 
 function whileLoop(n) {
-  while (n >= 0) {
+  while (n >= 0 && n !== 'undefined') {
     console.log(n);
     n--;
   }
   console.log('done');
 }
+
 
 function doWhileLoop(array) {
   function maybeTrue () {
